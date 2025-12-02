@@ -6,7 +6,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
   overflow-x: hidden;
 }
 
@@ -61,7 +61,6 @@ body {
   font-size: 24px;
   font-weight: bold;
   color: #00ffff;
-  text-shadow: 0 0 10px #00ffff;
 }
 
 .nav-menu {
@@ -74,15 +73,8 @@ body {
   color: #e0e0e0;
   text-decoration: none;
   font-weight: 500;
-  transition: all 0.3s ease;
   padding: 8px 16px;
   border-radius: 4px;
-}
-
-.nav-link:hover {
-  color: #00ffff;
-  background: rgba(0, 255, 255, 0.1);
-  text-shadow: 0 0 5px #00ffff;
 }
 
 /* Hero Section */
@@ -116,7 +108,6 @@ body {
   font-size: 4rem;
   font-weight: bold;
   color: #00ffff;
-  text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
   margin-bottom: 20px;
   letter-spacing: 2px;
 }
@@ -129,7 +120,7 @@ body {
 }
 
 .cta-button {
-  background: linear-gradient(45deg, #00ffff, #0080ff);
+  background: #00ffff;
   color: #000;
   border: none;
   padding: 15px 30px;
@@ -137,16 +128,8 @@ body {
   font-weight: bold;
   border-radius: 8px;
   cursor: pointer;
-  transition: all 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 1px;
-  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.3);
-}
-
-.cta-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 255, 255, 0.5);
-  background: linear-gradient(45deg, #00cccc, #0066cc);
 }
 
 /* Cyber Terms Section */
@@ -160,7 +143,6 @@ body {
   font-size: 2.5rem;
   color: #00ffff;
   margin-bottom: 60px;
-  text-shadow: 0 0 10px #00ffff;
 }
 
 .terms-grid {
@@ -172,37 +154,13 @@ body {
 }
 
 .term-card {
-  background: linear-gradient(135deg, rgba(0, 255, 255, 0.1), rgba(0, 128, 255, 0.1));
+  background: rgba(0, 255, 255, 0.05);
   border: 1px solid rgba(0, 255, 255, 0.3);
   border-radius: 12px;
   padding: 30px;
   text-decoration: none;
   color: inherit;
-  transition: all 0.3s ease;
   backdrop-filter: blur(10px);
-  position: relative;
-  overflow: hidden;
-}
-
-.term-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.2), transparent);
-  transition: left 0.5s ease;
-}
-
-.term-card:hover::before {
-  left: 100%;
-}
-
-.term-card:hover {
-  transform: translateY(-5px);
-  border-color: #00ffff;
-  box-shadow: 0 10px 30px rgba(0, 255, 255, 0.3);
 }
 
 .term-icon {
@@ -245,7 +203,6 @@ body {
   font-size: 3rem;
   color: #00ffff;
   margin-bottom: 30px;
-  text-shadow: 0 0 15px #00ffff;
 }
 
 .term-image {
@@ -280,7 +237,6 @@ body {
   color: #00ffff;
   font-size: 1.3rem;
   margin: 30px 0 15px 0;
-  text-shadow: 0 0 5px #00ffff;
 }
 
 .term-content ul {
@@ -304,20 +260,13 @@ body {
 
 .back-button {
   display: inline-block;
-  background: linear-gradient(45deg, #333, #555);
+  background: #444;
   color: #00ffff;
   text-decoration: none;
   padding: 12px 24px;
   border-radius: 8px;
   border: 1px solid rgba(0, 255, 255, 0.3);
-  transition: all 0.3s ease;
   font-weight: bold;
-}
-
-.back-button:hover {
-  background: linear-gradient(45deg, #555, #777);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.3);
 }
 
 /* Footer */
@@ -334,33 +283,33 @@ body {
   .hero-title {
     font-size: 2.5rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1.2rem;
   }
-  
+
   .terms-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  
+
   .term-card {
     padding: 20px;
   }
-  
+
   .nav-menu {
     gap: 15px;
   }
-  
+
   .nav-link {
     padding: 6px 12px;
     font-size: 0.9rem;
   }
-  
+
   .term-content {
     padding: 25px;
   }
-  
+
   .term-title {
     font-size: 2.2rem;
   }
@@ -370,19 +319,19 @@ body {
   .hero-title {
     font-size: 2rem;
   }
-  
+
   .section-title {
     font-size: 2rem;
   }
-  
+
   .term-title {
     font-size: 1.8rem;
   }
-  
+
   .container {
     padding: 0 15px;
   }
-  
+
   .term-content {
     padding: 20px;
   }
